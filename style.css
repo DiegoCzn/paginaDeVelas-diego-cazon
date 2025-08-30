@@ -166,7 +166,7 @@ main.container section{
   align-items:center;
   justify-content:center;
   padding:80px 20px;
-  background:url("img/hero.png") center/cover no-repeat;
+  background: url("img/hero.png") center/cover no-repeat;
   color:#fff;
 }
 .main::before{
