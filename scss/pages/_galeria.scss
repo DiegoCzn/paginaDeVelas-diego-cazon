@@ -1,0 +1,51 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+@use "../base/globals" as *;
+
+.container_imagenes {
+  @extend %container;
+
+  ul {
+    @extend %list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  li {
+    flex: 1 1 220px;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    @include m.card-image;
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: v.$shadow-2;
+    }
+  }
+}
+
+@include m.max(v.$bp1200) {
+  .container_imagenes ul {
+    gap: 18px;
+  }
+}
+@include m.between(v.$bp800, v.$bp553) {
+  .container_imagenes li {
+    flex: 1 1 44%;
+    max-width: 360px;
+  }
+}
+@include m.max(v.$bp553) {
+  .container_imagenes {
+    ul {
+      gap: 14px;
+    }
+    li {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}

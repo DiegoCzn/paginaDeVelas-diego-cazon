@@ -1,0 +1,102 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+@use "../base/globals" as *;
+
+.container {
+  background: v.$crema;
+  padding: 40px 20px;
+  color: v.$marron;
+
+  .container_titulo {
+    @extend %container;
+    margin: 0 auto 24px;
+    text-align: center;
+    h1 {
+      @extend %title;
+      font-size: 32px;
+    }
+  }
+}
+
+.container_articulos {
+  @extend %container;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  gap: 20px;
+  justify-content: center;
+
+  .container_articulos_item {
+    background: #fff;
+    border: 1px solid v.$beige;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: v.$shadow-1;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+      border-color: v.$rosa-2;
+    }
+    img {
+      @include m.card-image;
+      aspect-ratio: 3/4;
+    }
+    h3 {
+      margin: 8px 0 0;
+      font-size: 18px;
+      color: v.$marron;
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #7a5f55;
+      opacity: 0.9;
+    }
+
+    a:focus-visible,
+    :where(img, h3, p):focus-visible {
+      @extend %focus-outline;
+    }
+  }
+}
+
+/* Responsive */
+@include m.between(v.$bp800, v.$bp553) {
+  .container_articulos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    .container_articulos_item {
+      padding: 14px;
+      h3 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@include m.max(v.$bp553) {
+  .container_articulos {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    .container_articulos_item {
+      padding: 12px;
+      h3 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}

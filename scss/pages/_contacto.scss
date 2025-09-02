@@ -1,0 +1,85 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+@use "../base/globals" as *;
+
+.container_formulario {
+  max-width: 900px;
+  margin: 0 auto;
+
+  form {
+    background: #fff;
+    border: 1px solid v.$beige;
+    border-radius: 16px;
+    box-shadow: v.$shadow-1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    > div:nth-of-type(4) {
+      grid-column: 1 / -1;
+    }
+    > div:last-of-type {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      color: v.$marron;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 15px;
+      border: 1px solid v.$beige;
+      border-radius: 12px;
+      background: #fff;
+      color: v.$marron;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+      &:focus-visible {
+        outline: none;
+        border-color: v.$rosa-2;
+        box-shadow: 0 0 0 3px rgba(226, 169, 184, 0.25);
+        background: #fffaf7;
+      }
+    }
+
+    button[type="button"] {
+      @include m.button-pill(v.$rosa-2, v.$marron);
+      &:hover {
+        background: #d9988c;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@include m.between(v.$bp800, v.$bp553) {
+  .container_formulario form {
+    gap: 14px 16px;
+    padding: 18px;
+  }
+}
+@include m.max(v.$bp553) {
+  .container_formulario form {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+}

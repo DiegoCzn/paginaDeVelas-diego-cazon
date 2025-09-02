@@ -1,0 +1,89 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+@use "../base/globals" as *;
+
+main.container {
+  section {
+    @extend %container;
+    margin: 0 auto 28px;
+    line-height: 1.75;
+    font-size: 16px;
+    color: #7a5f55;
+
+    &:first-of-type {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      align-items: center;
+      gap: 24px;
+
+      p {
+        background: #fff;
+        border: 1px solid v.$beige;
+        border-radius: 14px;
+        padding: 16px 18px;
+        box-shadow: v.$shadow-1;
+        color: v.$marron;
+      }
+      img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        border-radius: 16px;
+        background: #fadcd9;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    h3 {
+      margin: 6px 0 10px;
+      font-size: 22px;
+      font-weight: 700;
+      color: v.$marron;
+      display: inline-block;
+      border-bottom: 3px solid v.$rosa-2;
+      padding-bottom: 4px;
+    }
+
+    + section p {
+      color: #7a5f55;
+    }
+  }
+}
+
+/* Responsive */
+
+@include m.between(v.$bp800, v.$bp553) {
+  main.container section:first-of-type {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  main.container section:first-of-type img {
+    margin: 0 auto;
+  }
+}
+@include m.max(v.$bp553) {
+  main.container {
+    padding: 28px 14px;
+
+    .container_titulo h1 {
+      font-size: 28px;
+    }
+    section {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    section:first-of-type {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    section:first-of-type img {
+      max-width: 100%;
+      border-radius: 14px;
+    }
+    section h3 {
+      font-size: 20px;
+    }
+  }
+}

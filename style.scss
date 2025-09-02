@@ -1,0 +1,12 @@
+@use "./scss/base/variables" as v;
+@use "./scss/base/mixins" as m;
+@use "./scss/base/globals";
+
+@use "./scss/layout/header";
+@use "./scss/layout/footer";
+
+@use "./scss/pages/hero";
+@use "./scss/pages/velas";
+@use "./scss/pages/galeria";
+@use "./scss/pages/sobre-nosotros";
+@use "./scss/pages/contacto";

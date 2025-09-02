@@ -1,0 +1,61 @@
+@use "variables" as v;
+
+/* Helpers */
+@mixin container {
+  max-width: v.$container;
+  margin: 0 auto;
+}
+@mixin flex-center($gap: null) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $gap {
+    gap: $gap;
+  }
+}
+
+/* Imagen tipo “card” */
+@mixin card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: v.$radius;
+  background: #fadcd9;
+  box-shadow: v.$shadow-1;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Botón píldora */
+@mixin button-pill($bg, $color) {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: $bg;
+  color: $color;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+  &:hover {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
+}
+
+/* Media queries */
+@mixin max($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+}
+@mixin between($max, $min) {
+  @media (max-width: $max) and (min-width: $min) {
+    @content;
+  }
+}
