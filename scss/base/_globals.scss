@@ -29,7 +29,10 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  height: auto;
+}
+
 body {
   height: 100%;
   display: flex;

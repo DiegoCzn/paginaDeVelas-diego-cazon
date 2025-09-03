@@ -20,12 +20,13 @@ main.container section, .container_imagenes, .container .container_titulo, .cont
 .container .container_titulo h1 {
   margin: 0;
   font-weight: 700;
-  color: #8C6A5D;
+  color: #8c6a5d;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.container_articulos .container_articulos_item a:focus-visible, .container_articulos .container_articulos_item :where(img, h3, p):focus-visible {
-  outline: 3px solid #E2A9B8;
+.container_articulos .container_articulos_item a:focus-visible,
+.container_articulos .container_articulos_item :where(img, h3, p):focus-visible {
+  outline: 3px solid #e2a9b8;
   outline-offset: 4px;
   border-radius: 12px;
 }
@@ -37,13 +38,17 @@ main.container section, .container_imagenes, .container .container_titulo, .cont
   box-sizing: border-box;
 }
 
-html, body {
+html {
+  height: auto;
+}
+
+body {
   height: 100%;
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  color: #8C6A5D;
-  background: #FFF8F0;
+  color: #8c6a5d;
+  background: #fff8f0;
 }
 
 main {
@@ -51,8 +56,8 @@ main {
 }
 
 .header {
-  background-color: #F8C9D4;
-  border-bottom: 1px solid #F5E1CE;
+  background-color: #f8c9d4;
+  border-bottom: 1px solid #f5e1ce;
   padding: 10px 20px;
 }
 .header .header_container {
@@ -71,7 +76,7 @@ main {
 }
 .header .header_navbar a {
   text-decoration: none;
-  color: #8C6A5D;
+  color: #8c6a5d;
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 20px;
@@ -79,7 +84,7 @@ main {
   transition: all 0.3s ease;
 }
 .header .header_navbar a:hover {
-  background-color: #E2A9B8;
+  background-color: #e2a9b8;
   color: #fff;
   border-radius: 50px;
 }
@@ -118,8 +123,8 @@ main {
   }
 }
 .footer {
-  background-color: #FADCD9;
-  color: #8C6A5D;
+  background-color: #fadcd9;
+  color: #8c6a5d;
   padding: 20px;
   margin-top: auto;
   width: 100%;
@@ -144,12 +149,12 @@ main {
 }
 .footer .footer_pages a {
   text-decoration: none;
-  color: #8C6A5D;
+  color: #8c6a5d;
   transition: all 0.3s ease;
 }
 .footer .footer_pages a:hover {
   color: #fff;
-  background-color: #E2A9B8;
+  background-color: #e2a9b8;
   border-radius: 20px;
   padding: 4px 8px;
 }
@@ -161,12 +166,12 @@ main {
   display: inline-block;
   margin-right: 12px;
   text-decoration: none;
-  color: #8C6A5D;
+  color: #8c6a5d;
   transition: all 0.3s ease;
 }
 .footer .footer_redes a:hover {
   color: #fff;
-  background-color: #E2A9B8;
+  background-color: #e2a9b8;
   border-radius: 12px;
   padding: 4px 8px;
 }
@@ -175,7 +180,7 @@ main {
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
-  border-top: 1px solid #F5E1CE;
+  border-top: 1px solid #f5e1ce;
   padding-top: 10px;
 }
 
@@ -221,7 +226,7 @@ main {
 .main .main_container p:first-of-type {
   font-weight: 600;
   font-size: clamp(16px, 3vw, 28px);
-  color: #EBD1C7;
+  color: #ebd1c7;
 }
 .main .main_container a {
   display: inline-block;
@@ -235,8 +240,8 @@ main {
   padding: 12px 22px;
   border-radius: 999px;
   font-weight: 700;
-  background: #E2A9B8;
-  color: #8C6A5D;
+  background: #e2a9b8;
+  color: #8c6a5d;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
@@ -245,7 +250,7 @@ main {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 .main .main_container a:hover {
-  background: #D9988C;
+  background: #d9988c;
 }
 
 /* Responsive */
@@ -278,9 +283,9 @@ main {
   }
 }
 .container {
-  background: #FFF8F0;
+  background: #fff8f0;
   padding: 40px 20px;
-  color: #8C6A5D;
+  color: #8c6a5d;
 }
 .container .container_titulo {
   margin: 0 auto 24px;
@@ -298,7 +303,7 @@ main {
 }
 .container_articulos .container_articulos_item {
   background: #fff;
-  border: 1px solid #F5E1CE;
+  border: 1px solid #f5e1ce;
   border-radius: 14px;
   padding: 16px;
   text-align: center;
@@ -311,14 +316,14 @@ main {
 .container_articulos .container_articulos_item:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
-  border-color: #E2A9B8;
+  border-color: #e2a9b8;
 }
 .container_articulos .container_articulos_item img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  background: #FADCD9;
+  background: #fadcd9;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   aspect-ratio: 3/4;
@@ -326,7 +331,7 @@ main {
 .container_articulos .container_articulos_item h3 {
   margin: 8px 0 0;
   font-size: 18px;
-  color: #8C6A5D;
+  color: #8c6a5d;
   font-weight: 600;
 }
 .container_articulos .container_articulos_item p {
@@ -383,7 +388,7 @@ main {
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  background: #FADCD9;
+  background: #fadcd9;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -426,11 +431,11 @@ main.container section:first-of-type {
 }
 main.container section:first-of-type p {
   background: #fff;
-  border: 1px solid #F5E1CE;
+  border: 1px solid #f5e1ce;
   border-radius: 14px;
   padding: 16px 18px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  color: #8C6A5D;
+  color: #8c6a5d;
 }
 main.container section:first-of-type img {
   width: 100%;
@@ -439,16 +444,16 @@ main.container section:first-of-type img {
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 16px;
-  background: #FADCD9;
+  background: #fadcd9;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 main.container section h3 {
   margin: 6px 0 10px;
   font-size: 22px;
   font-weight: 700;
-  color: #8C6A5D;
+  color: #8c6a5d;
   display: inline-block;
-  border-bottom: 3px solid #E2A9B8;
+  border-bottom: 3px solid #e2a9b8;
   padding-bottom: 4px;
 }
 main.container section + section p {
@@ -494,7 +499,7 @@ main.container section + section p {
 }
 .container_formulario form {
   background: #fff;
-  border: 1px solid #F5E1CE;
+  border: 1px solid #f5e1ce;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   padding: 20px;
@@ -518,7 +523,7 @@ main.container section + section p {
 .container_formulario form label {
   font-weight: 600;
   font-size: 14px;
-  color: #8C6A5D;
+  color: #8c6a5d;
 }
 .container_formulario form input[type=text],
 .container_formulario form input[type=email],
@@ -526,10 +531,10 @@ main.container section + section p {
   width: 100%;
   padding: 12px 14px;
   font-size: 15px;
-  border: 1px solid #F5E1CE;
+  border: 1px solid #f5e1ce;
   border-radius: 12px;
   background: #fff;
-  color: #8C6A5D;
+  color: #8c6a5d;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) inset;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
@@ -537,9 +542,9 @@ main.container section + section p {
 .container_formulario form input[type=email]:focus-visible,
 .container_formulario form textarea:focus-visible {
   outline: none;
-  border-color: #E2A9B8;
+  border-color: #e2a9b8;
   box-shadow: 0 0 0 3px rgba(226, 169, 184, 0.25);
-  background: #FFFAF7;
+  background: #fffaf7;
 }
 .container_formulario form button[type=button] {
   appearance: none;
@@ -548,8 +553,8 @@ main.container section + section p {
   padding: 12px 22px;
   border-radius: 999px;
   font-weight: 700;
-  background: #E2A9B8;
-  color: #8C6A5D;
+  background: #e2a9b8;
+  color: #8c6a5d;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
@@ -558,7 +563,7 @@ main.container section + section p {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 .container_formulario form button[type=button]:hover {
-  background: #D9988C;
+  background: #d9988c;
 }
 
 /* Responsive */
@@ -576,4 +581,4 @@ main.container section + section p {
   }
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22scss/base/_variables.scss%22,%22scss/base/_mixins.scss%22,%22scss/base/_globals.scss%22,%22scss/layout/_header.scss%22,%22scss/layout/_footer.scss%22,%22scss/pages/_hero.scss%22,%22scss/pages/_velas.scss%22,%22scss/pages/_galeria.scss%22,%22scss/pages/_sobre-nosotros.scss%22,%22scss/pages/_contacto.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAA;AAeA;ACbA;AAOA;AAQA;AASA;ACxBA;AACA;EAAiB,WFQL;EER8B;;;AAC1C;EAAiB;EAAkB;EAAW;;;AAC9C;EAAiB;EAAW;EAAkB;EAAkB;;;AAChE;EAAiB;EAA8B;EAAqB;;;AAEpE;AACA;EAAG;EAAU;EAAW;;;AAExB;EACE;EACA;EAAc;EACd,aFDU;EEEV,OFVQ;EEUS,YFZT;;;AEcV;EAAM;;;ACbN;EACE,kBHJQ;EGKR;EACA;;AAEA;EACE;EAAe;EAAqB;EAAgC;;AAItE;EAAkB;EAAoB;;AAGpC;EAAyB;EAAc;;AACvC;EACE;EAAsB,OHdlB;EGcmC;EACvC;EAAkB;EAAoB;EAAsB;;AAC5D;EAAS,kBHnBL;EGmBiC;EAAY;;;AAKvD;AFE2B;EECzB;IAA2B;IAAwB;IAAqB;IAAoB;;EAC5F;IAA2B;IAAyB;IAAiB;;;AFH7C;EEMxB;IAA2B;IAAwB;IAAoB;IAAmB;;EAExF;IAAI;IAAwB;IAAsB;;EAClD;IAAG;IAAe;IAAY;IAAmB;;;AChCrD;EACE;EAA0B;EAC1B;EAAc;EAAiB;;AAE/B;EHHA;EAAe;EAAqB;EACzB,KGEmD;EAAO;EAAuB;;AAC5F;EAAkB;EAAmB;;AAGnC;EAAyB;EAAc;EAAgB;EAAwB;;AAC/E;EACE;EAAsB,OJTlB;EISmC;;AACvC;EAAS;EAAY,kBJbjB;EIa6C;EAAoB;;AAKvE;EAAI;EAAmB;;AACvB;EACE;EAAsB;EAAmB;EAAsB,OJjB3D;EIiB4E;;AAChF;EAAS;EAAY,kBJrBjB;EIqB6C;EAAoB;;AAIzE;EACE;EAAiB;EAAmB;EAAgB;EACpD;EAA+B;;;AHFT;EGOxB;IAAkB;;;AC9BpB;EACE;EAAmB;EJAnB;EAAe;EAAqB;EIEpC;EAAmB;EACnB;;AAEA;EAAW;EAAY;EAAmB;EAAS,YLD1C;;AKGT;EACE;EAAmB;EAAW;EAAmB;;AAEjD;EACE;EAAiB;EACjB;EAAiB;;AAGnB;EACE;EAAc;EAAoC;EAClD;;AAEA;EAAiB;EAAiB;EAAkC;;AAGtE;EACE;EAAsB;EAAiB;EAAqB;EAAsB;EJTtF;EAAkB;EAAW;EAC7B;EAAoB;EAAsB;EAC1C,YDnBQ;ECmBS,ODhBT;ECgBwB;EAChC;;AACA;EAAU;EAAyC;;AIO/C;EAAS;;;AAKf;AJR0B;EISC;IAAO;;;AJRP;EIUF;IAAG;;EAAiB;IAAG;;;AJXtB;EIcxB;IAAO;IAAiB;;EAEtB;IAAI;;EAAkB;IAAG;;EAAkB;IAAG;;;ACvClD;EACE,YNFQ;EMEc;EAAoB;;AAE1C;EACsB;EAAoB;;AACxC;EAAoB;;;AAIxB;EAEE;EAAc;EACd;EAAU;;AAEV;EACE;EAAiB;EAA2B;EAC5C;EAAc;EAAmB,YNb1B;EMcP;EACA;EAAc;EAAuB;;AAErC;EAAS;EAA4B;EAAwC,cNtBvE;;AMuBN;ELdF;EAAa;EAAc;EAC3B;EAA0B;EAC1B,YDNS;ECOT;EKW8B;;AAC5B;EAAI;EAAgB;EAAgB,ONrB9B;EMqB+C;;AACrD;EAAG;EAAU;EAAgB;EAAe;;AAMhD;ALL2B;EKOzB;IACE;IAAsC;;EACtC;IAA2B;;EAAc;IAAG;;EAAiB;IAAE;;;ALVzC;EKcxB;IACE;IAA2B;;EAC3B;IAA2B;;EAAc;IAAG;;EAAiB;IAAE;;;ACpCjE;EAAyB;EAAc;EAAgB;EAAwB;;AAC/E;EAAI;EAAgB;EAAiB;EAAc;;AACnD;ENEA;EAAa;EAAc;EAC3B;EAA0B;EAC1B,YDNS;ECOT;;AML4B;EAAS;EAAuB,YPDnD;;;ACmBe;EMfC;IAAwB;;;ANgBxB;EMfa;IAAwB;IAAc;;;ANcpD;EMZH;IAAI;;EAAY;IAAI;IAAe;;;ACVxD;EAEE;EAAoB;EAAkB;EAAgB;;AAEtD;EACE;EAAc;EAAiC;EAAoB;;AAEnE;EACE;EAAiB;EAA2B;EAC5C;EAAmB,YRPhB;EQOwC,ORTzC;;AQWJ;EACE;EAAY;EAAiB;EAAa;EAAkB;EAC5D;EAAoB;EAAoB;;AAI5C;EACE;EAAmB;EAAgB;EAAiB,ORlBhD;EQmBJ;EAAsB;EAAmC;;AAG3D;EAAa;;;AAIjB;APH2B;EOMzB;IAAsC;IAA2B;;EACjE;IAA0C;;;APRlB;EOWxB;IACE;;EAEA;IAAsB;;EACtB;IAAS;IAAgB;;EACzB;IAAuB;IAA2B;;EAClD;IAA2B;IAAgB;;EAC3C;IAAY;;;ACzChB;EACE;EAAiB;;AAEjB;EACE;EAAiB;EAA2B;EAC5C,YTFO;ESEiB;EACxB;EAAc;EAA+B;;AAE7C;EAAO;EAAc;EAAuB;;AAC5C;EAAsB;;AACtB;EAAoB;EAAoB;EAAc;;AAEtD;EAAO;EAAiB;EAAgB,OTXlC;;ASaN;AAAA;AAAA;EAGE;EAAY;EAAmB;EAC/B;EAA2B;EAAoB;EAAiB,OTjB5D;ESkBJ;EACA;;AAEA;AAAA;AAAA;EACE;EAAc,cTzBZ;ES0BF;EAA4C;;AAIhD;ERbF;EAAkB;EAAW;EAC7B;EAAoB;EAAsB;EAC1C,YDnBQ;ECmBS,ODhBT;ECgBwB;EAChC;;AACA;EAAU;EAAyC;;AQW/C;EAAS;;;AAKf;ARX2B;EQazB;IAA4B;IAAe;;;ARdnB;EQiBxB;IAA4B;IAA2B;IAAU%22,%22file%22:%22style.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22scss/base/_variables.scss%22,%22scss/base/_mixins.scss%22,%22scss/base/_globals.scss%22,%22scss/layout/_header.scss%22,%22scss/layout/_footer.scss%22,%22scss/pages/_hero.scss%22,%22scss/pages/_velas.scss%22,%22scss/pages/_galeria.scss%22,%22scss/pages/_sobre-nosotros.scss%22,%22scss/pages/_contacto.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAA;AAeA;ACbA;AAcA;AAaA;AAqBA;AChDA;AACA;EACE,WFOU;EENV;;;AAEF;EACE;EACA;EACA;;;AAEF;EACE;EACA;EACA,OFVO;EEWP;;;AAEF;AAAA;EACE;EACA;EACA;;;AAGF;AACA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA,aF1BU;EE2BV,OFnCO;EEoCP,YFtCM;;;AEwCR;EACE;;;ACxCF;EACE,kBHJK;EGKL;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAIF;EACE;EACA;;AAIA;EAEE;EACA;;AAEF;EACE;EACA,OHzBG;EG0BH;EACA;EACA;EACA;EACA;;AACA;EACE,kBHnCC;EGoCD;EACA;;;AAMR;AFYE;EETA;IACE;IACA;IACA;IACA;;EAEF;IACE;IACA;IACA;;;AFLF;EESA;IACE;IACA;IACA;IACA;;EAGA;IACE;IACA;IACA;;EAEF;IACE;IACA;IACA;IACA;;;ACzEN;EACE;EACA,OJDO;EIEP;EACA;EACA;;AAEA;EHHA;EACA;EACA;EAEE,KGCuB;EACvB;EACA;;AAEF;EACE;EACA;;AAIA;EAEE;EACA;EACA;EACA;;AAEF;EACE;EACA,OJ3BG;EI4BH;;AACA;EACE;EACA,kBJlCC;EImCD;EACA;;AAMJ;EACE;EACA;;AAEF;EACE;EACA;EACA;EACA,OJ/CG;EIgDH;;AACA;EACE;EACA,kBJtDC;EIuDD;EACA;;AAKN;EACE;EACA;EACA;EACA;EACA;EACA;;;AHjBF;EGsBA;IACE;;;ACvEJ;EACE;EACA;EJEA;EACA;EACA;EIFA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA,YLPM;;AKUR;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAIJ;EACE;EACA;EACA;EACA;EACA;EJnBJ;EACA;EACA;EACA;EACA;EACA;EACA,YDnCO;ECoCP,ODjCO;ECkCP;EACA,YACE;;AAGF;EACE;EACA;;AIME;EACE;;;AAMR;AJPE;EISA;IACE;;;AJLF;EIUE;IACE;;EAEF;IACE;;;AJnBJ;EIwBA;IACE;IACA;;EAGA;IACE;;EAEF;IACE;;EAEF;IACE;;;ACpFN;EACE,YNFM;EMGN;EACA,ONFO;;AMIP;EAEE;EACA;;AACA;EAEE;;;AAKN;EAEE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA,YN1BO;EM2BP,YACE;EAGF;EACA;EACA;;AAEA;EACE;EACA;EACA,cN3CG;;AM6CL;EL7BF;EACA;EACA;EACA,eDTO;ECUP;EACA,YDhBS;ECiBT,YACE;EKwBE;;AAEF;EACE;EACA;EACA,ONjDG;EMkDH;;AAEF;EACE;EACA;EACA;EACA;;AAUN;ALdE;EKgBA;IACE;IACA;;EACA;IACE;;EACA;IACE;;EAEF;IACE;;;AL9BN;EKoCA;IACE;IACA;;EACA;IACE;;EACA;IACE;;EAEF;IACE;;;AC1FN;EAEE;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;;AAEF;ENFA;EACA;EACA;EACA,eDTO;ECUP;EACA,YDhBS;ECiBT,YACE;;AMHA;EACE;EACA,YPhBK;;;AC4CT;EMtBA;IACE;;;AN0BF;EMtBA;IACE;IACA;;;ANeF;EMVE;IACE;;EAEF;IACE;IACA;;;AC1CJ;EAEE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA,YRhBG;EQiBH,ORnBC;;AQqBH;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAIJ;EACE;EACA;EACA;EACA,ORrCG;EQsCH;EACA;EACA;;AAGF;EACE;;;AAKN;APGE;EOAA;IACE;IACA;;EAEF;IACE;;;APVF;EOcA;IACE;;EAEA;IACE;;EAEF;IACE;IACA;;EAEF;IACE;IACA;;EAEF;IACE;IACA;;EAEF;IACE;;;ACjFN;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA,YTLO;ESMP;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAEF;EACE;;AAEF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA,OT9BG;;ASiCL;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA,OT1CG;ES2CH;EACA,YACE;;AAIF;AAAA;AAAA;EACE;EACA,cTtDC;ESuDD;EACA;;AAIJ;ER/BF;EACA;EACA;EACA;EACA;EACA;EACA,YDnCO;ECoCP,ODjCO;ECkCP;EACA,YACE;;AAGF;EACE;EACA;;AQkBE;EACE;;;AAMR;ARdE;EQgBA;IACE;IACA;;;ARvBF;EQ2BA;IACE;IACA;IACA%22,%22file%22:%22style.css%22%7D */
